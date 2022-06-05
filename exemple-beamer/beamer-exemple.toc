@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Premi\`ere section}{3}{0}{1}
+\beamer@sectionintoc {2}{Images et sch\'emas}{9}{0}{2}
+\beamer@sectionintoc {3}{Code et formules math\'ematiques}{11}{0}{3}
+\beamer@sectionintoc {4}{Quelques autres fonctionnalit\'es utiles}{15}{0}{4}

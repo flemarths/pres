@@ -1,0 +1,171 @@
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\usetheme{default}
+
+\title[titre1]{TITRE de ma PRESENTATION}
+\author[A. Sanchez]{Arthur Sanchez}
+\date[]{Juillet 2022\\Paris}
+
+\begin{document}
+
+\begin{frame}[plain]
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Plan}
+  \tableofcontents
+\end{frame}
+
+\section{Première section}
+
+\begin{frame}
+  \frametitle{Titre première diapo}
+  \framesubtitle{Sous-titre première diapo}
+  Une liste d'items...
+  \begin{itemize}
+  \item item 1
+  \item \textbf{item 2} %texte en gras
+  \item \textit{item 3} %texte en italique
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Titre deuxième diapo (sans sous titre)}
+  Une liste d'items qui s'affiche progressivement
+  \begin{itemize}
+  \onslide<1-3> \item item 1
+  \onslide<2-3>\item \textbf{item 2} %texte en gras
+  \onslide<3-3>\item \textit{item 3} %texte en italique
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Enumerate plutôt que itemize pour des numéros..}
+  Une liste d'items numérotés...
+  \begin{enumerate}
+  \item item 1
+  \item \textbf{item 2} %texte en gras
+  \item \textit{item 3} %texte en italique
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Un exemple de tableau...}
+  \begin{table}
+    \begin{tabular}{| c || c | c |}
+      \hline
+      No. & Name & Age \\
+      \hline \hline
+      1 & John T & 24 \\
+      2 & Norman P & 8 \\
+      3 & Alex K & 14 \\ 
+      \hline
+    \end{tabular}
+    \caption{Name and age of students}
+  \end{table}
+\end{frame}
+
+\section{Images et schémas}
+
+\begin{frame}
+  \frametitle{Un exemple d'image}
+  \begin{center}
+    \includegraphics[width=4cm]{image.jpg}
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Un exemple de schéma/dessin}
+  % sauvegarder dans inkscape le document en svg puis sauvegarder comme pdf 
+  % ne pas oublier de sauvegarder en svg
+  \begin{center}
+    \includegraphics[width=4cm]{dessin.pdf} 
+  \end{center}
+\end{frame}
+
+\section{Code et formules mathématiques}
+
+\begin{frame}[fragile]
+  \frametitle{Un premier exemple de code...}
+  \begin{small}
+  \begin{lstlisting}[numbers=left,frame=trBL]
+# Python Program to find the area of triangle
+
+a = 5
+b = 6
+c = 7
+
+# Uncomment below to take inputs from the user
+# a = float(input('Enter first side: '))
+# b = float(input('Enter second side: '))
+# c = float(input('Enter third side: '))
+
+# calculate the semi-perimeter
+s = (a + b + c) / 2
+
+# calculate the area
+area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+print('The area of the triangle is %0.2f' %area)
+\end{lstlisting}
+\end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Un deuxième exemple de code...}
+    \begin{small}
+      \lstinputlisting[numbers=left,language=python]{area-triangle.py}
+    \end{small}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Un dernier exemple de code...}
+    \lstinputlisting[language=python, linerange={3-5,15-17}]{area-triangle.py}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Un exemple de formule mathématiques...}
+  $\forall x \in \mathbf{R}: \qquad x^{2} \geq 0$
+  \ \\ \ \\ \ \\ % insérer quelques lignes blanches
+  Quelques exemples de formules \href{https://www.math-linux.com/latex-4/faq/latex-faq/article/latex-derivee-limite-somme-produit-et-integrale}{ICI}
+\end{frame}
+
+\section{Quelques autres fonctionnalités utiles}
+
+\begin{frame}
+  \frametitle{Pour diviser la diapositive en 2 colonnes}
+  \begin{columns}
+    % Column 1
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item blab bla bla
+      \item blab bla bla
+      \item blab bla bla
+      \end{itemize}
+    \end{column}
+
+    % Column 2
+    \begin{column}{0.5\textwidth}
+      \includegraphics[scale=0.05]{image.jpg}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Misc...}
+  Pour aller à la ligne...\\
+  Et avec une ligne de plus \\ \ \\
+  et pour écrire \textcolor{blue}{en couleur} %blue green yellow orange red violet
+\end{frame}
+
+
+\end{document}
+
+

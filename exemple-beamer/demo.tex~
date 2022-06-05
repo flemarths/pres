@@ -1,0 +1,15 @@
+\documentclass{beamer}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\usetheme{default}
+
+\title[titre1]{TITRE de ma PRESENTATION}
+\author[A. Sanchez]{Arthur Sanchez}
+\date[]{Juillet 2022\\Paris}
+
+

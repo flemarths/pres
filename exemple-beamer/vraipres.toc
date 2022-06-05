@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Pr\'esentation du sujet et description de la proth\`ese}{3}{0}{1}
+\beamer@sectionintoc {2}{Impression et montage}{10}{0}{2}
+\beamer@sectionintoc {3}{Mod\`ele th\'eorique}{12}{0}{3}
+\beamer@sectionintoc {4}{Mesures exp\'erimentales}{16}{0}{4}

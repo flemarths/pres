@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Premi\~A\"{}re section}{3}{0}{1}
+\beamer@sectionintoc {2}{Images et sch\~A\IeC {\copyright }mas}{9}{0}{2}
+\beamer@sectionintoc {3}{Code et formules math\~A\IeC {\copyright }matiques}{11}{0}{3}
+\beamer@sectionintoc {4}{Quelques autres fonctionnalit\~A\IeC {\copyright }s utiles}{15}{0}{4}
